@@ -1,0 +1,218 @@
+$red: #aa0a00;
+$green: #006400;
+/*$blue: #1e90ff;*/
+$blue: #337ab7;
+$yellow: #cc8400;
+
+#div-content {
+  //padding: 30px;
+}
+
+.span-search-empresa {
+  background-color: #00427f;
+  color: #ffffff;
+}
+
+#div-load {
+  background-image: url('../img/loading.gif');
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100%;
+  height: 64px;
+}
+
+.nav-pills {
+  cursor: pointer;
+}
+
+.span-editar {
+  //background-color: #00427f;
+  background-color: $blue;
+  color: #ffffff;
+}
+
+.span-remove-empresa {
+  background-color: $red;
+  color: #ffffff;
+}
+
+.span-nova-empresa {
+  background-color: $blue;
+  color: #ffffff;
+}
+
+.span-editar-ok {
+  background-color: #427f2e;
+  color: #ffffff;
+}
+
+.tabela-selecionavel {
+  cursor: pointer;
+}
+
+.td-btn {
+ /* text-align: center;
+  display: block;
+  margin:auto;*/
+}
+.dropdown-menu > li > a {
+
+  cursor: pointer;
+
+  &.li-red {
+    color: white;
+    border-radius: 3px;
+    margin: 2px;
+    background-color: $red;
+    &:hover {
+      color: $red;
+      background-color: white;
+    }
+  }
+  &.li-green {
+    color: white;
+    border-radius: 3px;
+    margin: 2px;
+    background-color: $green;
+    &:hover {
+      color: $green;
+      background-color: white;
+    }
+  }
+
+  &.li-yellow {
+    color: white;
+    border-radius: 3px;
+    margin: 2px;
+    background-color: $yellow;
+    &:hover {
+      color: $yellow;
+      background-color: white;
+    }
+  }
+
+
+  &.li-blue {
+    color: white;
+    border-radius: 3px;
+    margin: 2px;
+    background-color: $blue;
+    &:hover {
+      color: $blue;
+      background-color: white;
+    }
+  }
+
+  &.li-gray {
+    color: black;
+    background-color: #9c9c9c;
+    cursor: default;
+  }
+
+}
+a > span {
+  color: black;
+}
+.span-red {
+  color: $red;
+}
+.span-blue {
+  color: $blue;
+}
+
+.span-green {
+  color: $green;
+}
+
+ .span-baixar-arquivo , .span-deletar-arquivo, .span-nova-anotacao-estagio, .span-nova-anotacao-arquivo, #btn-nova-anotacao-estagio {
+   cursor: pointer;
+ }
+
+.span-msgdata {
+  border-bottom-color: $blue;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  display: block;
+  text-align: center;
+  color: $blue;
+  font-weight: bolder;
+  font-size: 1.1em;
+}
+
+.span-msginfo {
+  color: $blue;
+  font-weight: bold;
+  display: block;
+}
+
+.span-msgbody {
+  padding-left: 10px;
+  &.msg-vazia {
+    color: darkgray;
+  }
+}
+
+.span-msgfile {
+  display: block;
+  & > a {
+    text-decoration: underline;
+  }
+}
+
+#div-btn-finalizar {
+  padding-right: 40px;
+}
+
+#ctism-logo {
+  display: inline;
+}
+
+#div-header {
+  text-align: right;
+}
+
+#div-left-menu, #div-content {
+  padding-top: 30px;
+}
+
+.rodape {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.input-label-inline {
+  padding-top: 25px;
+}
+
+.span-editar, .span-editar-ok {
+  cursor: pointer;
+}
+
+.span-title-empresa {
+  border-color: $blue;
+  border-bottom-width: 1px;
+  border-top-width: 1px;
+  border-bottom-style: solid;
+  border-top-style: solid;
+  display: block;
+  text-align: center;
+  color: $blue;
+  font-weight: bolder;
+  font-size: 1.1em;
+}
+
+.span-info-empresa-key {
+  color: $blue;
+  font-weight: bold;
+  display: block;
+}
+
+.span-info-empresa-val {
+  padding-left: 10px;
+}
+
+span.detalhes-empresa {
+  cursor: pointer;
+  color: $blue;
+}

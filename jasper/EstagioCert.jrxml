@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.2.2.final using JasperReports Library version 6.2.2  -->
+<!-- 2016-07-23T13:01:57 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="EstagioCert" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="5d67f9df-c157-445e-81f0-ed57e3c5cbee">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="aluno" class="java.lang.String"/>
+	<parameter name="professor" class="java.lang.String"/>
+	<parameter name="tipo_estagio" class="java.lang.String"/>
+	<parameter name="carga_horaria" class="java.lang.String"/>
+	<parameter name="local" class="java.lang.String"/>
+	<parameter name="token" class="java.lang.String">
+		<parameterDescription><![CDATA[]]></parameterDescription>
+	</parameter>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band height="555" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<image hAlign="Center" vAlign="Middle">
+				<reportElement mode="Opaque" x="100" y="-318" width="600" height="275" uuid="2943af13-f1f1-42f5-85c8-b7f2957a5a86"/>
+				<imageExpression><![CDATA["../img/ufsm.png"]]></imageExpression>
+			</image>
+		</band>
+	</background>
+	<title>
+		<band height="97" splitType="Stretch">
+			<staticText>
+				<reportElement key="" x="236" y="13" width="330" height="70" uuid="009b57eb-2d36-4af9-87cc-439447c88169"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="FreeSans" size="37" isBold="true" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[CERTIFICADO]]></text>
+			</staticText>
+			<image>
+				<reportElement x="20" y="0" width="97" height="97" uuid="582a1198-2d6c-4e1b-a056-fdc8702d1caa">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<imageExpression><![CDATA["../img/ctism.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="694" y="0" width="97" height="97" uuid="637bbdb5-9c8c-45d0-a1c2-0224de414545">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<imageExpression><![CDATA["../img/ufsm.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement stretchType="RelativeToBandHeight" x="20" y="0" width="780" height="125" uuid="bb45356b-3070-46d0-a9ad-7a0c353c40a4"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Serif" size="13"/>
+					<paragraph lineSpacing="Proportional" lineSpacingSize="3.0"/>
+				</textElement>
+				<textFieldExpression><![CDATA["O Colégio Técnico Industrial de Santa Maria certifica que o aluno " + $P{aluno} + " realizou estágio " + $P{tipo_estagio} + " com carga horária de " + $P{carga_horaria} + " horas, sob orientação do professor " + $P{professor} + ", no seguinte local: " + $P{local}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<textField>
+				<reportElement x="20" y="11" width="771" height="43" uuid="4ce2feaa-e04a-4e32-bb50-82ff8af4631f"/>
+				<textElement textAlignment="Right" verticalAlignment="Bottom"/>
+				<textFieldExpression><![CDATA["Autenticação: " + $P{token} + " Consulta disponível na seguinte URL: http://intranet.ctism.ufsm.br/estagios/autenticacertificado.php"]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="43" splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,gBAAiB;EACf,QAAQ,EAAE,QAAQ;EAClB,GAAG,EAAE,IAAI;EACT,SAAS,EAAE,KAAK;;AAGlB,yBAAuB;EACrB,gBAAiB;IACf,OAAO,EAAE,IAAI",
+"sources": ["../scss/autenticacertificado.scss"],
+"names": [],
+"file": "autenticacertificado.css"
+}

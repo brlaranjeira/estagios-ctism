@@ -1,0 +1,10 @@
+.ponto-separador {
+  position: relative;
+  top: 10px;
+  font-size: 1.5em; }
+
+@media (max-width: 767px) {
+  .ponto-separador {
+    display: none; } }
+
+/*# sourceMappingURL=autenticacertificado.css.map */
